@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fact.FactFragment">
+
+
+    <ImageButton
+        android:id="@+id/img_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:src="@drawable/ic_baseline_arrow_back_ios_36"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="100dp">
+
+        <TextView
+            android:id="@+id/text_view_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="25dp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="36sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/text_view_fact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="?attr/colorPrimary"
+            android:padding="5dp" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
